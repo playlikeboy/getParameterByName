@@ -1,7 +1,7 @@
 # getParameterByName
 
 ##You Can Get The document.url Search Query Values
-
+<code>
 function getParameterByName( name ){
   name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
   var regexS = "[\\?&]"+name+"=([^&#]*)";
@@ -12,3 +12,4 @@ function getParameterByName( name ){
   else
     return decodeURIComponent(results[1].replace(/\+/g, " "));
 }
+ </code>
